@@ -1,0 +1,3 @@
+echo ´´½¨
+curl -XPUT "10.0.0.222:9200/imm_log/" -d "{\"settings\":{\"number_of_shards\":5,\"number_of_replicas\":0},\"mappings\":{\"log\":{\"properties\":{\"userId\":{\"type\":\"string\",\"index\":\"not_analyzed\"},\"userName\":{\"type\":\"string\",\"index\":\"not_analyzed\"},\"strdate\":{\"type\":\"string\",\"index\":\"not_analyzed\"},\"operationContent\":{\"type\":\"string\",\"index\":\"not_analyzed\"},\"auserId\":{\"type\":\"string\",\"index\":\"not_analyzed\"},\"state\":{\"type\":\"string\",\"index\":\"not_analyzed\"},\"devId\":{\"type\":\"string\",\"index\":\"not_analyzed\"}}}}}"
+pause

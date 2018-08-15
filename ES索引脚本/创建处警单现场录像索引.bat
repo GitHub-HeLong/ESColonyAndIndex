@@ -1,0 +1,3 @@
+echo ´´½¨
+curl -XPUT "10.0.0.222:9200/videos/" -d "{\"settings\":{\"number_of_shards\":5,\"number_of_replicas\":1},\"mappings\":{\"alert\":{\"properties\":{\"disposalAlarmNum\":{\"type\":\"string\",\"index\":\"not_analyzed\"},\"eventNum\":{\"type\":\"string\",\"index\":\"not_analyzed\"},\"videoName\":{\"type\":\"string\",\"index\":\"not_analyzed\"},\"videoUrl\":{\"type\":\"string\",\"index\":\"not_analyzed\"}}}}}"
+pause
